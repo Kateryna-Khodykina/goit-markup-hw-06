@@ -88,3 +88,10 @@
 .address-link:focus {
   color: #404bbf;
 }
+
+.mobile-menu-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
