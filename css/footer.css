@@ -186,24 +186,33 @@
   .footer-subscribe {
     width: 100%;
     margin: 0;
+    text-align: center;
   }
 
   .footer-subscribe-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 585px;
-    gap: 24px;
+    width: 100%;
+    gap: 16px;
   }
 
   .footer-subscribe-input {
-    width: 288px;
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+  }
+
+  .footer-subscribe-label {
+    display: block;
+    width: 100%;
+    max-width: 288px;
   }
 
   .footer-subscribe-btn {
     width: 165px;
     min-width: 165px;
+    margin: 0 auto;
   }
 }
 

@@ -154,7 +154,7 @@
   .address-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 12px;
   }
 
   .address-link {
@@ -162,5 +162,41 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .address {
+    display: block;
+  }
+
+  .header .container {
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-right: 76px;
+    padding: 0;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
