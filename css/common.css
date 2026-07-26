@@ -44,9 +44,23 @@ button {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .section {
@@ -156,4 +170,15 @@ img {
 
 .footer-subscribe-icon {
   fill: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

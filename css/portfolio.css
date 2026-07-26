@@ -71,3 +71,41 @@
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0%);
 }
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-image-wrapper img {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
